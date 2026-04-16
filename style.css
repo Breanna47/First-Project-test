@@ -1250,7 +1250,7 @@ font-size: 16px;
   margin: 0 auto;
 }
 .row__professional {
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   margin-right: 24px;
 }
@@ -1258,6 +1258,9 @@ font-size: 16px;
   margin: 0 auto;
   margin-top: 24px;
   flex-direction: column;
+  padding: 16px;
+  width: 80%;
+  margin-bottom: 24px;
 }
 .pro__para {
   text-align: center;
@@ -1268,13 +1271,26 @@ font-size: 16px;
   text-align: center;
   margin-right: 12px;
   padding: 0px 12px 0px 0px;
+}
+.professional {
+  max-width: 700px;
+  width: 100%;
+ }
+ .pro__paragraph {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 12px;
+  margin-bottom: 24px;
  }
 .purple {
   text-align: center; 
 }
 .professional__email--button {
-  width: 100%;
+  width: 30%;
   margin-top: 24px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 .image__professional--wrapper {
   flex-direction: column;
@@ -1284,7 +1300,7 @@ font-size: 16px;
 }
 
 .row__steps {
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
   margin: 0 auto;
 }
@@ -1314,7 +1330,8 @@ margin-left: 12px;
   .steps__img {
     margin: 0 auto;
     margin-top: 24px;
-    width: 100%;
+    width: 80%;
+    margin-bottom: 24px;
   }
 
 .features__row {
@@ -1331,8 +1348,9 @@ margin-left: 12px;
   width: 100%;
 }
 .values__row {
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
+  max-width: 700px;
 }
 .values__header {
   text-align: center;
@@ -1350,7 +1368,7 @@ margin-left: 12px;
   text-align: center;
 }
 .value__img {
-  width: 100%;
+  width: 80%;
   padding: 24px;
   margin: 24px;
 }
@@ -1462,7 +1480,27 @@ margin-left: 264px;
   justify-content: center;
   align-items: center;
   width: 100%;
+  }
+  .test__para {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+  .testimonial {
+    margin-top: 24px;
+    text-align: center;
+  }
+.fa-star {
+  color: rgb(246, 173, 85);
+    display: inline-block;
+    height: 1.25rem;
+    width: 1.25rem;
 }
+.fas {
+  font-weight: 900;
+}
+
 #start .start__row {
   display: flex;
   flex-direction: column;
