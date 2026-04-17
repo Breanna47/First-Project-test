@@ -197,13 +197,15 @@ svg {
   ;
 }
 .header__email--button {
-  width: 20px;
+  width: 160px;
   border-radius: 500px;
   border: none;
-  padding: 12px 8px;
-position: absolute;
 right: 100px;
 top:2px;
+position: absolute;
+  margin: 20px 0;
+  padding: 20px 12px;
+
   color: white;
   font-size: 16px;
   font-weight: 500;
@@ -211,9 +213,6 @@ top:2px;
   z-index: 1;
   background-color: #6415ff;
   color: #fff;
-  padding: 20px;
-  margin: 20px 0;
-  width: 35%;
 }
 .ourtrusted {
   margin-top: 48px;
@@ -998,6 +997,10 @@ margin: 16px 8px;
 
 /* Footer */
 
+.whole__footer {
+  width: 100%;
+}
+
 footer {
   padding: 96px 32px;
 
@@ -1379,7 +1382,7 @@ margin-left: 12px;
 .values__img2 {
  text-align: center;
  padding: 0px;
- 
+    }
 }
 .values__stretch {
   margin-left: 0px;
