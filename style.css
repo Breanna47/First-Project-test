@@ -197,7 +197,7 @@ svg {
   ;
 }
 .header__email--button {
-  width: 20%;
+  width: 20px;
   border-radius: 500px;
   border: none;
   padding: 12px 8px;
@@ -1406,7 +1406,8 @@ text-align: center;
 font-size: 24px;
 text-align: center;
 width:30%;
-margin-left: 264px;
+margin: 0 auto;
+
 }
 .header__value--button {
   width: 30%;
@@ -1550,15 +1551,15 @@ margin-left: 264px;
 .footer__socials {
   margin: 16px 0;
 }
-
 .features__cards {
           flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 100%;
+        width: calc(100% / 3);
         margin: 0 auto;
         margin: 36px;
 }
+
 .features__row {
   justify-content: center;
 }
@@ -1579,4 +1580,16 @@ margin-left: 16px;
 .card__description {
   width: auto;
 max-width: 384px;
+}
+
+}
+@media (max-width: 600px) {
+.features__cards {
+          flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        margin: 36px;
+}
 }
