@@ -255,6 +255,7 @@ position: absolute;
   background-color: #f7f7f7;
   display: flex;
   width: 100%;
+
 }
 
 .features__container {
@@ -298,6 +299,7 @@ position: absolute;
   line-height: 1.625;
   text-align: center;
   max-width: 576px;
+  padding: 8px;
 }
 .features {
   display: flex;
@@ -383,7 +385,6 @@ position: absolute;
   font-weight: 500;
   color: #7c8ba1;
   line-height: 1.625;
-  text-align: center;
   max-width: 576px;
 }
 
@@ -498,8 +499,8 @@ position: absolute;
 .values__row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
+    align-items: center;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -528,15 +529,21 @@ position: absolute;
   display: flex;
   max-width: none;
   flex-direction: row;
+  
 }
 
 .values__wrapperAP {
   margin-top: 32px;
   margin-right: 32px;
+      align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+     
 }
 .values__title {
   display: flex;
-  align-items: center;
+    align-items: center;
+
 }
 .values__img1 {
   background-color: #98eab4;
@@ -922,7 +929,8 @@ position: absolute;
 }
 .start__container {
   padding: 80px 0;
-  width: 80%;
+  width: 100%;
+  max-width: 1280px;
   background-color: rgb(100, 21, 255);
   border-radius: 8px;
   display: flex;
@@ -998,11 +1006,12 @@ margin: 16px 8px;
 /* Footer */
 
 .whole__footer {
-  width: 100%;
+
 }
 
 footer {
   padding: 96px 32px;
+  width: 100%;
 
   position: relative;
   margin: 200px 32px;
@@ -1208,6 +1217,27 @@ height: 50px;
   margin: 0 auto;
   margin: 24px;
  }
+
+ .features {
+  align-items: center;
+display: flex;
+  width: 100%;
+  max-width: 1020px;
+ }
+.features__cards {
+    width: calc(100% / 2);
+    max-width: 800px;
+  display: flex;
+  padding: 32px 24px;
+  align-items: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #243e63;
+  margin: 0 0 32px 0;
+  flex-wrap: wrap;
+}
+
  .features__card--image {
   width: 100%;
   margin: 0 auto;
@@ -1257,13 +1287,12 @@ font-size: 16px;
   align-items: center;
   margin-right: 24px;
 }
-.image__professional {
-  margin: 0 auto;
-  margin-top: 24px;
+.image__professional--wrapper {
   flex-direction: column;
-  padding: 16px;
-  width: 80%;
-  margin-bottom: 24px;
+  align-items: center;
+  margin-top: 36px;
+  width: 100%;
+  margin: 0 auto;
 }
 .pro__para {
   text-align: center;
@@ -1273,7 +1302,7 @@ font-size: 16px;
 .professional__wehaveamazingservice {
   text-align: center;
   margin-right: 12px;
-  padding: 0px 12px 0px 0px;
+  padding: 0px 12px 0px 12px;
 }
 .professional {
   max-width: 700px;
@@ -1294,6 +1323,7 @@ font-size: 16px;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  
 }
 .image__professional--wrapper {
   flex-direction: column;
@@ -1383,7 +1413,7 @@ margin-left: 12px;
  text-align: center;
  padding: 0px;
     }
-}
+
 .values__stretch {
   margin-left: 0px;
   margin-right: 0px;
@@ -1394,8 +1424,10 @@ margin-left: 12px;
 .values__wrapperAP {
   margin-top: 32px;
   margin-right: 0px;
-  text-align: center;
-}
+      align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 .values__title {
 text-align: center;
   margin: 0 auto; 
@@ -1429,10 +1461,15 @@ margin: 0 auto;
   padding: 48px 0;
 }
 .plans {
-  flex-direction: column;
-  align-items: center; 
-  
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
 }
+
+
+
 .plan {
  
     margin-top: 4rem;
@@ -1554,22 +1591,19 @@ margin: 0 auto;
 .footer__socials {
   margin: 16px 0;
 }
-.features__cards {
-          flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: calc(100% / 3);
-        margin: 0 auto;
-        margin: 36px;
-}
 
+.section__title {
+  padding: 0px 12px;
+}
+#features .section__para {
+padding: 0px 12px;
+}
 .features__row {
   justify-content: center;
 }
 .features__card {
        display: flex;
 margin-left: 16px;
-    padding: px;
     border: #e5e7eb;
     border-radius: 50%;
 
@@ -1583,16 +1617,33 @@ margin-left: 16px;
 .card__description {
   width: auto;
 max-width: 384px;
+}}
+@media (max-width: 900px) {
+.plans {
+  flex-direction: column;
+  align-items: center; 
+}
 }
 
-}
-@media (max-width: 600px) {
+
+@media (max-width: 728px) {
 .features__cards {
           flex-direction: column;
         align-items: center;
-        text-align: center;
         width: 100%;
+        max-width: 500px;
         margin: 0 auto;
         margin: 36px;
 }
+.features__card--heading {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.features__card--description {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
 }
