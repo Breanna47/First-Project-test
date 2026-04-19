@@ -41,8 +41,6 @@ nav {
   letter-spacing: 0.6px;
 }
 
-
-
 .nav__link {
   font-size: 14px;
   font-weight: 600;
@@ -194,7 +192,7 @@ svg {
   font-size: 16px;
   font-weight: 500;
   z-index: 1;
-  ;
+  
 }
 .header__email--button {
   width: 160px;
@@ -205,7 +203,6 @@ top:2px;
 position: absolute;
   margin: 20px 0;
   padding: 20px 12px;
-
   color: white;
   font-size: 16px;
   font-weight: 500;
@@ -1006,13 +1003,14 @@ margin: 16px 8px;
 /* Footer */
 
 .whole__footer {
-
+margin: 0 auto;
+margin-top: 188px;
 }
 
 footer {
   padding: 96px 32px;
   width: 100%;
-
+margin: 0 auto;
   position: relative;
   margin: 200px 32px;
   margin-bottom: -32px;
@@ -1498,15 +1496,18 @@ margin: 0 auto;
   width: 100%;
   margin-bottom: 24px;
 }
+
 .test__header {
   text-align: center;
   width: 100%;
   
 }
+
 .test__description {
   width: 100%;
   padding-left: 0px;
   margin-top: 24px;
+  padding: 0px;
 } 
 .start__container {
   padding: 36px 0;
